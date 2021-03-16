@@ -1,0 +1,10 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 5rem);
+    justify-content: center;
+    gap: 10px;
+}
+
+.colorbox{
+    background-color: aqua;
+}
