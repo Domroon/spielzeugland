@@ -1,9 +1,56 @@
-.grid {
+.grid{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.2rem;
+    grid-template-areas: 
+        "nav nav nav nav"
+        "sidebar main main main"
+        "sidebar content1 content2 content3"
+        "footer footer footer footer";
+}
+
+.grid-color {
     display: grid;
     grid-template-columns: repeat(auto-fit, 20rem);
     justify-content: center;
     gap: 1rem;
 }
+
+.container {
+    background-color: rgba(255, 255, 0, 0.527);
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.content1 {
+    grid-area: content1;
+}
+
+.content2 {
+    grid-area: content2;
+}
+
+.content3 {
+    grid-area: content3;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+
 
 .box{
     border: black solid 2px;
