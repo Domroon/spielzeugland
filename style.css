@@ -1,10 +1,31 @@
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 5rem);
+    grid-template-columns: repeat(auto-fit, 20rem);
     justify-content: center;
-    gap: 10px;
+    gap: 1rem;
 }
 
-.colorbox{
-    background-color: aqua;
+.box{
+    border: black solid 2px;
+    height: 20rem;
+}
+
+.colorbox1 {
+    background-color: yellow;
+}
+
+.colorbox2 {
+    background-color: blue;
+}
+
+.colorbox3 {
+    background-color: green;
+}
+
+.colorbox4 {
+    background-color: red;
+}
+
+.colorbox5 {
+    background-color: orange;
 }
