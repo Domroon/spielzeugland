@@ -1,13 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+:root {
+    --primary-color: rgba(255, 255, 0, 0.514);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--primary-color);
+    font-family: 'Architects Daughter', cursive;
+}
+
 .grid{
     display: grid;
     height: 100vh;
+    max-width: 1200px;
     grid-template-columns: repeat(4, 1fr);
-    gap: 0.2rem;
+    grid-template-rows: 0.3fr .15fr 1.5fr 0.7fr 0.3fr;
+    gap: 0.5rem;
     grid-template-areas: 
+        "header header header header"
         "nav nav nav nav"
         "sidebar main main main"
         "sidebar content1 content2 content3"
         "footer footer footer footer";
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .grid-color {
@@ -18,7 +36,11 @@
 }
 
 .container {
-    background-color: rgba(255, 255, 0, 0.527);
+    background-color: #CCC;
+}
+
+header {
+    grid-area: header;
 }
 
 nav {
