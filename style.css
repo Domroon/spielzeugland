@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
 
 :root {
     --primary-color: rgba(255, 255, 0, 0.514);
@@ -8,7 +8,16 @@ body {
     padding: 0;
     margin: 0;
     background-color: var(--primary-color);
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Comic Neue', cursive;
+}
+
+p {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .grid{
@@ -41,10 +50,38 @@ body {
 
 header {
     grid-area: header;
+    padding: 10px;
 }
 
 nav {
     grid-area: nav;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 10px;
+}
+
+.button {
+    padding: 10px;
+    box-shadow: -5px -5px 0 black;
+    margin-top: 5px;
+}
+
+.red{
+    background-color: rgb(255, 0, 0);
+    box-shadow: -5px -5px 0 rgb(240, 0, 0);
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
 }
 
 main {
